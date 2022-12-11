@@ -19,14 +19,14 @@ class Pagination extends Component {
     }
 
     setCurrentPage=(page)=>{
-        alert(page);
+        //alert(page);
         this.props.setCurrentPage(page);
     }
 
     prevPage=()=>{
         const currentPage=this.props.currentPage
         if(currentPage===1){
-            alert("이동불가!")
+            //alert("이동불가!")
             return
         }
         this.props.setCurrentPage(currentPage-1);
@@ -37,7 +37,7 @@ class Pagination extends Component {
         const {movieLen,postsPerPage}=this.props;
         const lastPage=Math.ceil(movieLen / postsPerPage)
         if(currentPage===lastPage){
-            alert("이동불가!")
+            //alert("이동불가!")
             return
         }
         this.props.setCurrentPage(currentPage+1);

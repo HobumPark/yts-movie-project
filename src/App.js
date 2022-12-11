@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   setCurrentPage=(page)=>{
-    alert(page);
+    //alert(page);
     this.setState({
       currentPage:page
     })
